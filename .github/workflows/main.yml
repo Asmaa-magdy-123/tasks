@@ -16,11 +16,9 @@ jobs:
 
 
     steps:
-      - name: 'go'
-        run: pwd
 
 
-      - name: 'goo'
-        run: echo asmaa
+      - name: 'print'
+        run: ls
 
 
