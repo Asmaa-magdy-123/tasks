@@ -22,4 +22,10 @@ jobs:
       - name: 'login'
         run: docker login --username ${{secrets.USER}} --password ${{secrets.PASS}}
 
+      - name: 'loggin'
+        run: docker build -t ${{secrets.USER}}/imgtask .
+
+      - name: 'push'
+        run: docker push ${{secrets.USER}}/imgtask
+
 
